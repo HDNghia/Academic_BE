@@ -151,7 +151,7 @@ const questionController = {
 
     update_question: async (req, res) => {
         try {
-            const question = await Question.findById(req.params.id);
+            const question = await Question.findById(req.body._id);
             await question.updateOne({ $set: req.body });
             res.status(200).json({
                 message: "update succesfully",

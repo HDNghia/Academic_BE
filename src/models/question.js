@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const questionSchema = new mongoose.Schema({
     _id: { type: Number, require: true },
     imageQuestion: { type: String, default: '' },
+    imageAnswer: { type: String, default: '' },
     question: { type: String, default: '' },
     answer: { type: String, default: '' },
     numberDate: { type: Number, default: '' },

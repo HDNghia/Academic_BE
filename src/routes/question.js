@@ -30,7 +30,7 @@ router.post("/", questionController.create_question);
 router.get("/", questionController.getQuestion);
 
 //UPDATE A QUESTION
-router.put('/:id', questionController.update_question);
+router.put('/', questionController.update_question);
 
 router.delete('/:id', questionController.delete_question);
 
